@@ -212,8 +212,9 @@ console.log(joe.scopeArrow());
 
 // TODO: Write a COMMENT below to answer the following questions.
 // 1. What is "this" when joe.scope() is invoked?
-//
+//The 'this' when joe.scope() is invoked represents the object that it is within or the scope of joe
 // 2. What is "this" when joe.scopeArrow() is invoked?
-//
+//The 'this' when joe.scopeArrow() is invoked is the entire function defined
 // 3. Explain why "this" is different when an arrow function is used.
-//
+//The 'this' in the traditional function will relate to the object that is defined, and the this will relate to the entire function where it is defined 
+// because the arrow functions will look through a different scope of the function or lexical scope.
