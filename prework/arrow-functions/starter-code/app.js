@@ -204,4 +204,4 @@ console.log(joe.scopeArrow());
 // Window {window: Window, self: Window, document: document, name: "", location: Location, ,,,}
 // 3. Explain why "this" is different when an arrow function is used.
 // "this" is different because it is not bound to the function element.
-
+//
