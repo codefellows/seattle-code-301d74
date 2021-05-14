@@ -6,7 +6,7 @@
 
 * Product Page: https://www.creative-tim.com/product/argon-design-system-react
 * Copyright 2020 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/argon-design-system-react/blob/main/LICENSE.md)
+* Licensed under MIT (https://github.com/creativetimofficial/argon-design-system-react/blob/master/LICENSE.md)
 
 * Coded by Creative Tim
 
@@ -112,14 +112,14 @@ class TabsSection extends React.Component {
                   <TabPane tabId="iconTabs1">
                     <p className="description">
                       Raw denim you probably haven't heard of them jean shorts
-                      Austin. Nesciunt tofu stumptown aliqua, retro synth main
+                      Austin. Nesciunt tofu stumptown aliqua, retro synth master
                       cleanse. Mustache cliche tempor, williamsburg carles vegan
                       helvetica. Reprehenderit butcher retro keffiyeh
                       dreamcatcher synth.
                     </p>
                     <p className="description">
                       Raw denim you probably haven't heard of them jean shorts
-                      Austin. Nesciunt tofu stumptown aliqua, retro synth main
+                      Austin. Nesciunt tofu stumptown aliqua, retro synth master
                       cleanse.
                     </p>
                   </TabPane>
@@ -134,7 +134,7 @@ class TabsSection extends React.Component {
                   <TabPane tabId="iconTabs3">
                     <p className="description">
                       Raw denim you probably haven't heard of them jean shorts
-                      Austin. Nesciunt tofu stumptown aliqua, retro synth main
+                      Austin. Nesciunt tofu stumptown aliqua, retro synth master
                       cleanse. Mustache cliche tempor, williamsburg carles vegan
                       helvetica. Reprehenderit butcher retro keffiyeh
                       dreamcatcher synth.
@@ -205,14 +205,14 @@ class TabsSection extends React.Component {
                   <TabPane tabId="plainTabs1">
                     <p className="description">
                       Raw denim you probably haven't heard of them jean shorts
-                      Austin. Nesciunt tofu stumptown aliqua, retro synth main
+                      Austin. Nesciunt tofu stumptown aliqua, retro synth master
                       cleanse. Mustache cliche tempor, williamsburg carles vegan
                       helvetica. Reprehenderit butcher retro keffiyeh
                       dreamcatcher synth.
                     </p>
                     <p className="description">
                       Raw denim you probably haven't heard of them jean shorts
-                      Austin. Nesciunt tofu stumptown aliqua, retro synth main
+                      Austin. Nesciunt tofu stumptown aliqua, retro synth master
                       cleanse.
                     </p>
                   </TabPane>
@@ -227,7 +227,7 @@ class TabsSection extends React.Component {
                   <TabPane tabId="plainTabs3">
                     <p className="description">
                       Raw denim you probably haven't heard of them jean shorts
-                      Austin. Nesciunt tofu stumptown aliqua, retro synth main
+                      Austin. Nesciunt tofu stumptown aliqua, retro synth master
                       cleanse. Mustache cliche tempor, williamsburg carles vegan
                       helvetica. Reprehenderit butcher retro keffiyeh
                       dreamcatcher synth.

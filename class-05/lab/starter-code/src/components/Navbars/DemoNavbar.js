@@ -6,7 +6,7 @@
 
 * Product Page: https://www.creative-tim.com/product/argon-design-system-react
 * Copyright 2020 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/argon-design-system-react/blob/main/LICENSE.md)
+* Licensed under MIT (https://github.com/creativetimofficial/argon-design-system-react/blob/master/LICENSE.md)
 
 * Coded by Creative Tim
 
@@ -38,8 +38,6 @@ import {
   Col,
   UncontrolledTooltip
 } from "reactstrap";
-import reactWhite from "assets/img/brand/argon-react-white.png";
-import argonReact from "assets/img/brand/argon-react.png";
 
 class DemoNavbar extends React.Component {
   componentDidMount() {
@@ -77,7 +75,7 @@ class DemoNavbar extends React.Component {
               <NavbarBrand className="mr-lg-5" to="/" tag={Link}>
                 <img
                   alt="..."
-                  src={reactWhite}
+                  src={require("assets/img/brand/argon-react-white.png")}
                 />
               </NavbarBrand>
               <button className="navbar-toggler" id="navbar_global">
@@ -96,7 +94,7 @@ class DemoNavbar extends React.Component {
                       <Link to="/">
                         <img
                           alt="..."
-                          src={argonReact}
+                          src={require("assets/img/brand/argon-react.png")}
                         />
                       </Link>
                     </Col>

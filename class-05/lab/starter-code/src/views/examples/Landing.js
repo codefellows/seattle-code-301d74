@@ -6,7 +6,7 @@
 
 * Product Page: https://www.creative-tim.com/product/argon-design-system-react
 * Copyright 2020 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/argon-design-system-react/blob/main/LICENSE.md)
+* Licensed under MIT (https://github.com/creativetimofficial/argon-design-system-react/blob/master/LICENSE.md)
 
 * Coded by Creative Tim
 
@@ -18,13 +18,6 @@
 import React from "react";
 // nodejs library that concatenates classes
 import classnames from "classnames";
-import promo1 from "assets/img/theme/promo-1.png";
-import cardImg from "assets/img/theme/img-1-1200x1000.jpg";
-import ill2 from "assets/img/ill/ill-2.svg";
-import team1 from "assets/img/theme/team-1-800x800.jpg";
-import team2 from "assets/img/theme/team-2-800x800.jpg";
-import team3 from "assets/img/theme/team-3-800x800.jpg";
-import team4 from "assets/img/theme/team-4-800x800.jpg";
 
 // reactstrap components
 import {
@@ -261,7 +254,7 @@ class Landing extends React.Component {
                   <img
                     alt="..."
                     className="img-fluid floating"
-                    src={promo1}
+                    src={require("assets/img/theme/promo-1.png")}
                   />
                 </Col>
                 <Col className="order-md-1" md="6">
@@ -338,7 +331,7 @@ class Landing extends React.Component {
                   <Card className="bg-default shadow border-0">
                     <CardImg
                       alt="..."
-                      src={cardImg}
+                      src={require("assets/img/theme/img-1-1200x1000.jpg")}
                       top
                     />
                     <blockquote className="card-blockquote">
@@ -410,7 +403,7 @@ class Landing extends React.Component {
                     <img
                       alt="..."
                       className="img-center img-fluid"
-                      src={ill2}
+                      src={require("assets/img/ill/ill-2.svg")}
                     />
                   </div>
                 </Col>
@@ -524,7 +517,7 @@ class Landing extends React.Component {
                     <img
                       alt="..."
                       className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-                      src={team1}
+                      src={require("assets/img/theme/team-1-800x800.jpg")}
                       style={{ width: "200px" }}
                     />
                     <div className="pt-4 text-center">
@@ -566,7 +559,7 @@ class Landing extends React.Component {
                     <img
                       alt="..."
                       className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-                      src={team2}
+                      src={require("assets/img/theme/team-2-800x800.jpg")}
                       style={{ width: "200px" }}
                     />
                     <div className="pt-4 text-center">
@@ -610,7 +603,7 @@ class Landing extends React.Component {
                     <img
                       alt="..."
                       className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-                      src={team3}
+                      src={require("assets/img/theme/team-3-800x800.jpg")}
                       style={{ width: "200px" }}
                     />
                     <div className="pt-4 text-center">
@@ -652,7 +645,7 @@ class Landing extends React.Component {
                     <img
                       alt="..."
                       className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-                      src={team4}
+                      src={require("assets/img/theme/team-4-800x800.jpg")}
                       style={{ width: "200px" }}
                     />
                     <div className="pt-4 text-center">
@@ -810,8 +803,8 @@ class Landing extends React.Component {
                           <Input
                             placeholder="Your name"
                             type="text"
-                            onFocus={() => this.setState({ nameFocused: true })}
-                            onBlur={() => this.setState({ nameFocused: false })}
+                            onFocus={e => this.setState({ nameFocused: true })}
+                            onBlur={e => this.setState({ nameFocused: false })}
                           />
                         </InputGroup>
                       </FormGroup>
@@ -829,8 +822,8 @@ class Landing extends React.Component {
                           <Input
                             placeholder="Email address"
                             type="email"
-                            onFocus={() => this.setState({ emailFocused: true })}
-                            onBlur={() => this.setState({ emailFocused: false })}
+                            onFocus={e => this.setState({ emailFocused: true })}
+                            onBlur={e => this.setState({ emailFocused: false })}
                           />
                         </InputGroup>
                       </FormGroup>

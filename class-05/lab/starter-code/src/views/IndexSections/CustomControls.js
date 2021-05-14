@@ -6,7 +6,7 @@
 
 * Product Page: https://www.creative-tim.com/product/argon-design-system-react
 * Copyright 2020 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/argon-design-system-react/blob/main/LICENSE.md)
+* Licensed under MIT (https://github.com/creativetimofficial/argon-design-system-react/blob/master/LICENSE.md)
 
 * Coded by Creative Tim
 
@@ -37,7 +37,7 @@ class CustomControls extends React.Component {
       range: { min: 100.0, max: 500.0 }
     }).on(
       "update",
-      function(values) {
+      function(values, handle) {
         this.setState({ simpleValue: values[0] });
       }.bind(this)
     );
@@ -51,7 +51,7 @@ class CustomControls extends React.Component {
       range: { min: 100.0, max: 500.0 }
     }).on(
       "update",
-      function(values) {
+      function(values, handle) {
         this.setState({ rangeLow: values[0], rangeHigh: values[1] });
       }.bind(this)
     );
