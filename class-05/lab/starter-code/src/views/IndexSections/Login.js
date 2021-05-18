@@ -6,7 +6,7 @@
 
 * Product Page: https://www.creative-tim.com/product/argon-design-system-react
 * Copyright 2020 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/argon-design-system-react/blob/main/LICENSE.md)
+* Licensed under MIT (https://github.com/creativetimofficial/argon-design-system-react/blob/master/LICENSE.md)
 
 * Coded by Creative Tim
 
@@ -36,8 +36,6 @@ import {
   Row,
   Col
 } from "reactstrap";
-import github from "assets/img/icons/common/github.svg";
-import googleImg from "assets/img/icons/common/google.svg";
 
 class Login extends React.Component {
   state = {};
@@ -95,12 +93,12 @@ class Login extends React.Component {
                           className="btn-neutral btn-icon"
                           color="default"
                           href="#pablo"
-                          onClick={(e) => e.preventDefault()}
+                          onClick={e => e.preventDefault()}
                         >
                           <span className="btn-inner--icon mr-1">
                             <img
                               alt="..."
-                              src={github}
+                              src={require("assets/img/icons/common/github.svg")}
                             />
                           </span>
                           <span className="btn-inner--text">Github</span>
@@ -109,12 +107,12 @@ class Login extends React.Component {
                           className="btn-neutral btn-icon"
                           color="default"
                           href="#pablo"
-                          onClick={(e) => e.preventDefault()}
+                          onClick={e => e.preventDefault()}
                         >
                           <span className="btn-inner--icon mr-1">
                             <img
                               alt="..."
-                              src={googleImg}
+                              src={require("assets/img/icons/common/google.svg")}
                             />
                           </span>
                           <span className="btn-inner--text">Google</span>
@@ -140,10 +138,10 @@ class Login extends React.Component {
                             <Input
                               placeholder="Email"
                               type="email"
-                              onFocus={() =>
+                              onFocus={e =>
                                 this.setState({ emailFocused: true })
                               }
-                              onBlur={() =>
+                              onBlur={e =>
                                 this.setState({ emailFocused: false })
                               }
                             />
@@ -164,10 +162,10 @@ class Login extends React.Component {
                               placeholder="Password"
                               type="password"
                               autoComplete="off"
-                              onFocus={() =>
+                              onFocus={e =>
                                 this.setState({ passwordFocused: true })
                               }
-                              onBlur={() =>
+                              onBlur={e =>
                                 this.setState({ passwordFocused: false })
                               }
                             />

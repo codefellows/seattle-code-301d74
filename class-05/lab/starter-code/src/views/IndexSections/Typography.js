@@ -6,7 +6,7 @@
 
 * Product Page: https://www.creative-tim.com/product/argon-design-system-react
 * Copyright 2020 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/argon-design-system-react/blob/main/LICENSE.md)
+* Licensed under MIT (https://github.com/creativetimofficial/argon-design-system-react/blob/master/LICENSE.md)
 
 * Coded by Creative Tim
 
@@ -19,10 +19,6 @@ import React from "react";
 
 // reactstrap components
 import { Row, Col } from "reactstrap";
-import team1 from "assets/img/theme/team-1-800x800.jpg";
-import team2 from "assets/img/theme/team-2-800x800.jpg";
-import team3 from "assets/img/theme/team-3-800x800.jpg";
-import team4 from "assets/img/theme/team-4-800x800.jpg";
 
 class Typography extends React.Component {
   render() {
@@ -319,7 +315,7 @@ class Typography extends React.Component {
             <img
               alt="..."
               className="img-fluid rounded shadow"
-              src={team1}
+              src={require("assets/img/theme/team-1-800x800.jpg")}
               style={{ width: "150px" }}
             />
           </Col>
@@ -330,7 +326,7 @@ class Typography extends React.Component {
             <img
               alt="..."
               className="img-fluid rounded-circle shadow"
-              src={team2}
+              src={require("assets/img/theme/team-2-800x800.jpg")}
               style={{ width: "150px" }}
             />
           </Col>
@@ -341,7 +337,7 @@ class Typography extends React.Component {
             <img
               alt="..."
               className="img-fluid rounded shadow-lg"
-              src={team3}
+              src={require("assets/img/theme/team-3-800x800.jpg")}
               style={{ width: "150px" }}
             />
           </Col>
@@ -352,7 +348,7 @@ class Typography extends React.Component {
             <img
               alt="..."
               className="img-fluid rounded-circle shadow-lg"
-              src={team4}
+              src={require("assets/img/theme/team-4-800x800.jpg")}
               style={{ width: "150px" }}
             />
           </Col>

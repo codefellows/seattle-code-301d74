@@ -6,7 +6,7 @@
 
 * Product Page: https://www.creative-tim.com/product/argon-design-system-react
 * Copyright 2020 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/argon-design-system-react/blob/main/LICENSE.md)
+* Licensed under MIT (https://github.com/creativetimofficial/argon-design-system-react/blob/master/LICENSE.md)
 
 * Coded by Creative Tim
 
@@ -62,6 +62,8 @@ class Datepicker extends React.Component {
   // end-date className which means that this day will only have right border radius
   // this way, the selected dates will look nice and will only be rounded at the ends
   getClassNameReactDatetimeDays = date => {
+    if (this.state.startDate && this.state.endDate) {
+    }
     if (
       this.state.startDate &&
       this.state.endDate &&
@@ -131,7 +133,7 @@ class Datepicker extends React.Component {
                       onChange={e =>
                         this.handleReactDatetimeChange("startDate", e)
                       }
-                      renderDay={(props, currentDate) => {
+                      renderDay={(props, currentDate, selectedDate) => {
                         let classes = props.className;
                         classes += this.getClassNameReactDatetimeDays(
                           currentDate
@@ -164,7 +166,7 @@ class Datepicker extends React.Component {
                       onChange={e =>
                         this.handleReactDatetimeChange("endDate", e)
                       }
-                      renderDay={(props, currentDate) => {
+                      renderDay={(props, currentDate, selectedDate) => {
                         let classes = props.className;
                         classes += this.getClassNameReactDatetimeDays(
                           currentDate

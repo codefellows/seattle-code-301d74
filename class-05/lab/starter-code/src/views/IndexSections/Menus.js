@@ -6,7 +6,7 @@
 
 * Product Page: https://www.creative-tim.com/product/argon-design-system-react
 * Copyright 2020 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/argon-design-system-react/blob/main/LICENSE.md)
+* Licensed under MIT (https://github.com/creativetimofficial/argon-design-system-react/blob/master/LICENSE.md)
 
 * Coded by Creative Tim
 
@@ -34,7 +34,6 @@ import {
   Row,
   Col
 } from "reactstrap";
-import argonReact from "assets/img/brand/argon-react.png";
 
 class Menus extends React.Component {
   render() {
@@ -69,7 +68,7 @@ class Menus extends React.Component {
                             <Link to="/">
                               <img
                                 alt="..."
-                                src={argonReact}
+                                src={require("assets/img/brand/argon-react.png")}
                               />
                             </Link>
                           </Col>
@@ -158,7 +157,7 @@ class Menus extends React.Component {
                             <Link to="/">
                               <img
                                 alt="..."
-                                src={argonReact}
+                                src={require("assets/img/brand/argon-react.png")}
                               />
                             </Link>
                           </Col>

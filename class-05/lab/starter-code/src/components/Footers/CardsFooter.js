@@ -6,7 +6,7 @@
 
 * Product Page: https://www.creative-tim.com/product/argon-design-system-react
 * Copyright 2020 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/argon-design-system-react/blob/main/LICENSE.md)
+* Licensed under MIT (https://github.com/creativetimofficial/argon-design-system-react/blob/master/LICENSE.md)
 
 * Coded by Creative Tim
 
@@ -31,8 +31,6 @@ import {
   Col,
   UncontrolledTooltip
 } from "reactstrap";
-import landing from "assets/img/theme/landing.jpg";
-import profile from "assets/img/theme/profile.jpg";
 
 class CardsFooter extends React.Component {
   render() {
@@ -46,7 +44,7 @@ class CardsFooter extends React.Component {
                   <Link to="/landing-page">
                     <CardImg
                       alt="..."
-                      src={landing}
+                      src={require("assets/img/theme/landing.jpg")}
                     />
                   </Link>
                 </Card>
@@ -56,7 +54,7 @@ class CardsFooter extends React.Component {
                   <Link to="/profile-page">
                     <CardImg
                       alt="..."
-                      src={profile}
+                      src={require("assets/img/theme/profile.jpg")}
                     />
                   </Link>
                 </Card>
@@ -174,7 +172,7 @@ class CardsFooter extends React.Component {
                   </NavItem>
                   <NavItem>
                     <NavLink
-                      href="https://github.com/creativetimofficial/argon-design-system-react/blob/main/LICENSE.md"
+                      href="https://github.com/creativetimofficial/argon-design-system-react/blob/master/LICENSE.md"
                       target="_blank"
                     >
                       MIT License

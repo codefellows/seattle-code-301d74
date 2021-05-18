@@ -6,7 +6,7 @@
 
 * Product Page: https://www.creative-tim.com/product/argon-design-system-react
 * Copyright 2020 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/argon-design-system-react/blob/main/LICENSE.md)
+* Licensed under MIT (https://github.com/creativetimofficial/argon-design-system-react/blob/master/LICENSE.md)
 
 * Coded by Creative Tim
 
@@ -37,8 +37,6 @@ import {
 // core components
 import DemoNavbar from "components/Navbars/DemoNavbar.js";
 import SimpleFooter from "components/Footers/SimpleFooter.js";
-import github from "assets/img/icons/common/github.svg";
-import googleImg from "assets/img/icons/common/google.svg";
 
 class Register extends React.Component {
   componentDidMount() {
@@ -80,7 +78,7 @@ class Register extends React.Component {
                           <span className="btn-inner--icon mr-1">
                             <img
                               alt="..."
-                              src={github}
+                              src={require("assets/img/icons/common/github.svg")}
                             />
                           </span>
                           <span className="btn-inner--text">Github</span>
@@ -94,7 +92,7 @@ class Register extends React.Component {
                           <span className="btn-inner--icon mr-1">
                             <img
                               alt="..."
-                              src={googleImg}
+                              src={require("assets/img/icons/common/google.svg")}
                             />
                           </span>
                           <span className="btn-inner--text">Google</span>

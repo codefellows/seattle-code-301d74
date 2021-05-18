@@ -6,7 +6,7 @@
 
 * Product Page: https://www.creative-tim.com/product/argon-design-system-react
 * Copyright 2020 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/argon-design-system-react/blob/main/LICENSE.md)
+* Licensed under MIT (https://github.com/creativetimofficial/argon-design-system-react/blob/master/LICENSE.md)
 
 * Coded by Creative Tim
 
@@ -19,8 +19,6 @@ import React from "react";
 
 // reactstrap components
 import { Button, Container, Row, Col } from "reactstrap";
-import reactWhite from "assets/img/brand/argon-react-white.png";
-import creative from "assets/img/brand/creativetim-white-slim.png";
 
 class Hero extends React.Component {
   render() {
@@ -49,7 +47,7 @@ class Hero extends React.Component {
                     <img
                       alt="..."
                       className="img-fluid"
-                      src={reactWhite}
+                      src={require("assets/img/brand/argon-react-white.png")}
                       style={{ width: "200px" }}
                     />
                     <p className="lead text-white">
@@ -92,7 +90,7 @@ class Hero extends React.Component {
                         alt="..."
                         className="ml-1"
                         style={{ height: "28px" }}
-                        src={creative}
+                        src={require("assets/img/brand/creativetim-white-slim.png")}
                       />
                     </div>
                   </Col>
