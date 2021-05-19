@@ -1,11 +1,13 @@
 
 # Warm-Up Exercise
+
 Examine the code below. Add a function to your React code that makes a call to your server using the 'axios' libraray as soon as the component mounts, on the '/bananas' route. Update the state of 'bananas' with the results that you get back.
 
 ## app.js
 
-```
+```jsx
 import React from 'react';
+import axios from 'axios';
 
 const SERVER = 'http://localhost:3001';
 
@@ -17,11 +19,16 @@ class App extends React.Component {
     }
   }
 
+  callToServer = async () => {
+    let response = await axios.get(SERVER + '/bananas');
+  
+    this.setState({bananas: response.data});
+  }
+
   render() {
     return(
       <div className="app">
         <h1>Bananas!</h1>
-
         {this.state.bananas && 
           <p>{this.state.bananas}</p>
         }
@@ -35,7 +42,7 @@ export default App;
 
 ## server.js
 
-```
+```javascript
 'use strict'
 
 const express = require('express');
@@ -43,7 +50,9 @@ const app = express();
 const cors = require('cors');
 app.use(cors());
 
-app.get('/bananas', (request, response) => response.send('bananas are great'));
+app.get('/bananas', (request, response) => {
+  response.send('bananas are great');
+});
 
 app.listen(3001);
 ```
