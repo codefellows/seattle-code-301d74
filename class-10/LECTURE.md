@@ -88,7 +88,7 @@ If we want our data to live in our server for longer than the time is takes to m
 
 * pro,  if a user has already searched for this data, we can just pass that previous result back vs making another HTTP request.
 * con, not super fresh. We need a away to invalidate our storage. (based on time).
-  * when is fresh data prioritized.
+  * when is fresh data prioritized?
 
 * using in-memory storage: {}
   * each feature of our app will get a key, the value being data fetched from a server.
