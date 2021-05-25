@@ -1,0 +1,27 @@
+const express = require('express');
+const app = express();
+
+const cors = require('cors');
+app.use(cors());
+
+const superagent = require('superagent');
+
+const PORT = process.env.PORT;
+
+app.get('/books', getBooks);
+
+async function getBooks(request, response) {
+  const searchQuery = request.query;
+
+  let url = 'https://api.google.books';
+
+  let results =  await superagent.get(url);
+
+  response.status(200).send(results.data);
+   
+   // .then(results => {
+   //   response.status(400).send(results.data);
+   //  })
+}
+
+app.listen(PORT, () => console.log('App is listening!'));
