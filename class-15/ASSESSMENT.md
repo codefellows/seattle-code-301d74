@@ -1,53 +1,102 @@
-# 301 Final Exam
+# Code 301 Final Assessment
 
-## Overview
+This assessment comes in 2 parts (applications), a **client** and a **server** that together, will allow a user to create a list of items.
 
-The 301 final exam consists of two parts, each worth 50 points. You must score a **total** of 80 points to pass.
+Each application is intended to be operated and tested independently, while also working together.
 
-## Getting Started
+- The server, written in express, when started, will be the API that the react application uses for data retrieval and storage
 
-You've been given a .zip file containing your customized assessment assignment.  
+## Feature Tasks
 
-1. Download this file to your machine
-1. Move the .zip file to an empty folder
-1. Unzip the file
-   - From the terminal, use the command: `unzip filename.zip` (where filename is the name of the .zip file we gave you)
-   - Or, from Finder (Mac) or Explorer (Windows), you can double click the file to extract it's contents
-1. Open VSCode from the folder containing the files you've unzipped
-1. Change into the folder you want to work in and run the tests.
-    1. Note that for the code challenges, you can specify the test file to run using `npm test filename` so that you don't have to see all of the tests at once
+- Fix the bug in the server
+- Fix the bug in the client
+- Add **DELETE** functionality on both the server and client
+  - The client app has a "Delete Button" that is there but is not wired up. Wire it up.
+- Change the styling of the items list
 
-### Part 1: The Final Exam App - 50pts
+### The API Server
 
-> There are 4 parts to this assignment, each worth a different amount of points, totaling 50
+Located in the `/server` folder, this is an express server designed to perform CRUD (Create, Read, Update, Delete) operations on a mongo/mongoose data model: `items`. Note that this server does not require you to install or configure MongoDB, it will take care of that for you.
 
-Included in the server folder - `finalExamApp` - is a README.md which contains setup and installation guides for you to follow.
+> However, this server is broken. Your task is to fix the bugs.
 
-You will need a working postgres server in order to complete this assignment.
+How will you know that you've found them all? The tests will all pass!
 
-As you write code for your server, you can run `npm test` to continually check that your server meets the requirements.
+#### Server: Running the tests
 
-> Note that your server must be running and listening on port 3002 before you can run the test command to check it.
+- Make sure the server is NOT running
+- From the root directory of the server in the terminal, run the command `npm test`
+- You should receive a list of the tests that are passing and failing just like you have seen in your code challenges
 
-### Part 2: The Final Exam Questions - 50pts
+#### Server: Getting Started
 
-> 5 Questions - 10 Points Each
+- Create an empty private repo on GitHub
+- Invite your instructor to the repo
+- Connect it to your server directory:
+  - run `git init`
+  - run `git branch -M main`
+  - run `git remote add origin <url-of-the-repo-you-just-created>`
+  - A/C/P
 
-These work just like your regular code challenges, where you can write the code and run the tests as you go to check your progress.
+- Install your dependencies
+- Run the tests
+  - with the server turned off run the command: `npm test`
+- A "bug" is defect or missing feature. Find the bugs and fix them - 20 POINTS
+  - You will know you have found the bugs when the tests all pass
+- Deploy to Heroku - 5 POINTS
 
-As you're writing code in your editor to solve the challenges, run your tests in the terminal.
+#### Server: Notes
 
-1. Change into the folder you want to work in and run the tests.
-1. Run tests for just the file you're working on using `npm test filename``
-1. To see **all** of your tests, run the command `npm test`
+- You may inspect the tests, but do not change them.
+- Once you have this working, keep it running. The React app will be using it to save and retrieve data
 
-## To turn in this assignment
+### The React App
 
-Create a .zip file of both directories
+The React application will allow a user to:
 
-- From the terminal ...
-  - Change into the directory folder containing your assignments
-  - Enter this command (replacing `yourname` with your actual name)
-    `zip -r yourname.zip * --exclude \*/node_modules/\* --exclude \*.zip`
-- Open Canvas and attach that file to this assignment
-- Include any comments or notes on your test coverage, etc
+- Add a new item
+- Delete an item from the list
+- Display current items
+
+#### React App: Getting Started
+
+- Create an empty private repo on GitHub
+- Invite your instructor to the repo
+- connect it to your React app directory:
+  - run `git init`
+  - run `git branch -M main`
+  - run `git remote add origin <url-of-the-repo-you-just-created>`
+  - A/C/P
+
+- Install your dependencies
+- Run the tests
+  - with the React App turned off run `npm test`
+- A "bug" is defect or missing feature. Find the bugs and fix them - 20 POINTS
+  - You will know you have found the bugs when the tests all pass
+- Deploy to Netlify - 5 POINTS
+
+#### React App: Change Styling - 25 POINTS
+
+- Using React Bootstrap, change the list from a `Table` to an `Accordion` for showing the items in the list.
+
+#### React App Notes
+
+- Throughout the application code, you will see that some components/markup have a prop called **data-testid** that look like the below -- **Do not remove or change these, they are required for the tests and grading**
+  - ```data-testid="---"```
+- When you are running the application and manually testing in the browser, it'll use your server and will not operate unless it is running
+- However, it's not sufficiently set up at first to reach the API.
+  - You'll need to properly configure the app in order to reach the server.
+- When you are running the tests with `npm test` the application will simulate having a server, so it's not necessary to have it running while running the tests
+
+## Rubric
+
+- 20 Points: Fix the Express API Server (all tests other than DELETE passing)
+- 20 Points: Fix the React App (all tests other than DELETE passing)
+- 25 Points: Add DELETE functionality to both server and client
+- 25 Points: Style the application with Bootstrap
+- 10 Points: Deployed and Tested in the cloud
+  - Server running at Heroku
+  - React App running at Netlify, configured to talk to the deployed server
+  - Tests for both running in the green at GitHub
+
+## STRETCH GOAL: Add Auth0
